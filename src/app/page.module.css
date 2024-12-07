@@ -12,5 +12,36 @@
 }
 
 @media (max-width: 600px) {
-  
+}
+
+.imageSlider {
+  position: relative;
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  border: 5px solid blue;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.imageSlider::-webkit-scrollbar {
+  display: none;
+}
+
+.imageSlider {
+  scrollbar-width: none;
+}
+
+.imageBox {
+  height: 100%;
+  position: relative;
+}
+
+.img {
+  object-fit: contain;
+  height: 100%;
+  width: auto;
 }

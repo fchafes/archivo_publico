@@ -34,12 +34,14 @@ a {
   flex-direction: row;
   align-items: stretch;
   height: 100vh;
+  overflow: hidden;
 }
 
 header {
   width: 300px;
   background-color: #fff;
   padding: 0.8em;
+  flex-shrink: 0;
 }
 
 .header-wrap {
@@ -82,7 +84,11 @@ nav ul {
 
 main {
   flex-grow: 1;
-  background-color: red;
+  background-color: rgb(232, 166, 166);
+  border: 5px solid green;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 }
 
 /* ----- MOBILE -----  */
