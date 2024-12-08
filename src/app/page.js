@@ -17,7 +17,7 @@ export default function Home() {
         priority
       />
       <Image
-        src="/images/home/home_10.jpg"
+        src="/images/slider/home_10.jpg"
         width={500}
         height={500}
         alt="imagen-next"
