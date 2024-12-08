@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
+import { usePathname } from "next/navigation";
 
 const ABCDiatypeMono = localFont({
   src: "./fonts/ABCDiatypeMonoVariable.ttf",
@@ -23,6 +24,8 @@ export default function RootLayout({ children }) {
   const handleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
+  const pathname = usePathname();
+  console.log("esto es pathname+++++++++++", pathname)
 
   return (
     <html lang="en">
@@ -30,27 +33,46 @@ export default function RootLayout({ children }) {
         <div className="container">
           <header>
             <div className="header-wrap">
-              <nav
-                className={`${isMenuOpen ? 'open' : ''}`}
-              >
+              <nav className={`${isMenuOpen ? "open" : ""}`}>
                 <ul>
                   <li>
-                    <Link href="/">SHOP</Link>
+                    <Link
+                      href="#"
+                      className={pathname === "/shop" ? "active" : ""}
+                    >
+                      SHOP
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/">ABOUT</Link>
+                    <Link
+                      href="/about"
+                      className={pathname === "/about" ? "active" : ""}
+                    >
+                      ABOUT
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/">WEBSITE-TERMS</Link>
+                    <Link
+                      href="/terms"
+                      className={pathname === "/terms" ? "active" : ""}
+                    >
+                      WEBSITE-TERMS
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/">E-MAIL</Link>
+                    <Link href="mailto:archivo-publico@gmail.com">E-MAIL</Link>
                   </li>
                   <li>
-                    <Link href="/">INSTAGRAM</Link>
+                    <Link
+                      href="https://www.instagram.com/archivo__publico/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      INSTAGRAM
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/">CART (0)</Link>
+                    <Link href="#">CART (0)</Link>
                   </li>
                 </ul>
               </nav>

@@ -8,12 +8,18 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--abc-diatype-mono), serif;
+  font-size: 0.75em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,6 +33,21 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+nav ul li a {
+  color: #8e8e8e;
+}
+
+nav ul li a.active {
+  color: #000;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  nav ul li a:hover {
+    color: #000;
+  }
 }
 
 .container {
@@ -52,20 +73,19 @@ header {
   height: 100%;
 }
 
-nav {
+.header-wrap nav {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease;
 }
 
-nav.open {
+.header-wrap nav.open {
   height: 100px;
 }
 
 nav ul {
   text-decoration: none;
   list-style: none;
-  font-size: 0.8em;
 }
 
 .logo {
@@ -84,8 +104,6 @@ nav ul {
 
 main {
   flex-grow: 1;
-  background-color: rgb(232, 166, 166);
-  border: 5px solid green;
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -106,7 +124,7 @@ main {
     flex-direction: row;
     align-items: end;
   }
-  nav {
+  .header-wrap nav {
     position: absolute;
     top: 0;
   }
@@ -121,7 +139,7 @@ main {
 /* ------ DESKTOP ------ */
 
 @media (min-width: 768px) {
-  nav {
+  .header-wrap nav {
     height: auto;
     overflow: visible;
   }

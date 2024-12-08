@@ -1,0 +1,21 @@
+.aboutContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0.8em;
+}
+
+.textContainer {
+  max-width: 500px;
+}
+
+.textContainer ul {
+  list-style: none;
+}
+
+.textContainer a {
+  display: block;
+}
+
+.textBox {
+  margin-bottom: 1em;
+}
