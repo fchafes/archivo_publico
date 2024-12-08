@@ -11,6 +11,14 @@ export default function Home() {
   return (
     <div className={styles.imageSlider}>
       <Image
+        src="/images/logotipo_ap.png"
+        alt="Logotipo de Archivo Público"
+        layout="responsive"
+        width={400}
+        height={56}
+        priority
+      />
+      <Image
         src="/images/home/home_10.jpg"
         width={500}
         height={500}
