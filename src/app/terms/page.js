@@ -3,6 +3,7 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import "intersection-observer";
 
 export default function Terms() {
   const [activeSection, setActiveSection] = useState("");
