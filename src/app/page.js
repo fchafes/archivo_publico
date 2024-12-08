@@ -1,3 +1,5 @@
+"use client";
+
 import { imagePaths } from "../../data/imagePaths";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -5,6 +7,7 @@ import Image from "next/image";
 // import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Home() {
+  console.log("esto es imagePaths", imagePaths);
   return (
     <div className={styles.imageSlider}>
       {imagePaths.map((src, index) => (
