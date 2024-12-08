@@ -1,6 +1,5 @@
 import { imagePaths } from "../../data/imagePaths";
 import styles from "./page.module.css";
-import Image from "next/image";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
