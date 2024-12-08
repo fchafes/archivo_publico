@@ -32,14 +32,16 @@ export default function About() {
         </div>
         <div className={styles.textBox}>
           <p>CONTACT</p>
-          <Link href="mailto:archivopublico@gmail.com">E-MAIL</Link>
-          <Link
+          <ul>
+          <li><Link href="mailto:archivopublico@gmail.com">E-MAIL</Link></li>
+          <li><Link
             href="https://www.instagram.com/archivo__publico/"
             target="_blank"
             rel="noopener noreferrer"
           >
             INSTAGRAM
-          </Link>
+          </Link></li>
+          </ul>
         </div>
         <div className={styles.textBox}>
           <p>ARCHIVO PÚBLICO LLC</p>
