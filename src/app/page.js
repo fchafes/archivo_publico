@@ -24,8 +24,8 @@ export default function Home() {
       />
       {imagePaths.map((src, index) => (
         <div key={index} className={styles.imageBox}>
-          {/* <img className={styles.img} src={src} alt={`Imagen ${index + 1}`} /> */}
-          <Image src={src} width={500} height={500} alt="imagen-next" />
+          <img className={styles.img} src={src} alt={`Imagen ${index + 1}`} />
+          {/* <Image src={src} width={500} height={500} alt="imagen-next" /> */}
         </div>
       ))}
     </div>
