@@ -10,6 +10,12 @@ export default function Home() {
   console.log("esto es imagePaths", imagePaths);
   return (
     <div className={styles.imageSlider}>
+      <Image
+        src="/images/home/home_10.jpg"
+        width={500}
+        height={500}
+        alt="imagen-next"
+      />
       {imagePaths.map((src, index) => (
         <div key={index} className={styles.imageBox}>
           {/* <img className={styles.img} src={src} alt={`Imagen ${index + 1}`} /> */}
