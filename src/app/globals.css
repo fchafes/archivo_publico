@@ -123,12 +123,11 @@ main {
   }
 
   main {
-    max-height: 70vh;
+    min-height: calc(100svh - 30svh);
   }
 
   header {
-    height: 30vh;
-    min-height: 250px;
+    height: 30svh;
     width: 100%;
   }
   .header-wrap {
