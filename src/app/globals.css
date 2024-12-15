@@ -125,11 +125,11 @@ main {
   }
 
   main {
-    min-height: calc(100svh - 30svh);
+    min-height: calc(100vh - 30vh);
   }
 
   header {
-    height: 30svh;
+    height: 30vh;
     min-height: 250px;
     width: 100%;
     position: sticky;
