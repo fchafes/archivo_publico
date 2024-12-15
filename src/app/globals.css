@@ -114,7 +114,6 @@ main {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  height: 100svh;
 }
 
 /* ----- MOBILE -----  */
@@ -126,15 +125,15 @@ main {
   }
 
   main {
-    min-height: calc(100vh - 30vh);
     min-height: calc(100svh - 30svh);
   }
 
   header {
-    height: 30vh;
     height: 30svh;
     min-height: 250px;
     width: 100%;
+    position: sticky;
+    top: 0;
   }
   .header-wrap {
     flex-direction: row;
@@ -160,8 +159,7 @@ main {
 
 @media (min-width: 768px) {
   .container {
-    height: 100vh;
-    height: 100svh;
+    height: 100%;
   }
   .header-wrap nav {
     height: auto;
