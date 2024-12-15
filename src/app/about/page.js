@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Link from "next/link";
 
 export default function About() {
   return (
@@ -7,47 +6,29 @@ export default function About() {
       <div className={styles.textContainer}>
         <div className={styles.textBox}>
           <p>
-            ARCHIVO_PUBLICO® IS AN ONLINE SHOP DEDICATED TO SELECT/CURATE
-            FASHION UNIQUE PIECES FROM THE WORLD ARCHIVE, AVAILABLE.
+            A brand founded in 2024 by Mariela Ortega as an extension of her
+            love for fashion, textures, volume, silhouettes and feeling through
+            costume. Archivo Público exists to join you with items of clothing
+            that have lived another life.
           </p>
         </div>
-        <div className={styles.textBox}>
-          <ul>
-            <li>BRANDS</li>
-            <li>1017 ALYX 9SM</li>
-            <li>ALTUZZARA</li>
-            <li>ARMANI</li>
-            <li>A.W.A.K.E MODE</li>
-            <li>BOTTEGA VENETA</li>
-            <li>BURBERRY</li>
-            <li>CALVIN KLEIN</li>
-            <li>CHICO</li>
-            <li>DONNA KARAN</li>
-            <li>FIORUCCI</li>
-            <li>GIVENCHY</li>
-            <li>ISABEL MARANT</li>
-            <li>RALPH LAUREN</li>
-            <li>LAVIN</li>
-          </ul>
-        </div>
-        <div className={styles.textBox}>
-          <p>CONTACT</p>
-          <ul>
-          <li><Link href="mailto:archivopublico@gmail.com">E-MAIL</Link></li>
-          <li><Link
-            href="https://www.instagram.com/archivo__publico/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            INSTAGRAM
-          </Link></li>
-          </ul>
-        </div>
-        <div className={styles.textBox}>
-          <p>ARCHIVO PÚBLICO LLC</p>
-          <p>LOREM IPSUM STREET 17</p>
-          <p>77716 MIAMI, US</p>
-        </div>
+          <div className={styles.textBox}>
+            <p>
+              Just like a library that brings together words, book plots,
+              delicious melodies, plays, love letters, surprise emails,
+              friendship poems and documents of extensive research; We gather,
+              curate and tell our story to the fashionably curious through
+              pieces selected under the criteria of dressing well.
+            </p>
+          </div>
+          <div className={styles.textBox}>
+            <p>
+              A space that brings together pieces that tell you a story, invite
+              you to invent and encourage you to feel. We welcome you as part of
+              the infinite circular flow of garments with past lives, present
+              lives and potential future lives.
+            </p>
+          </div>
         <div className={styles.textBox}>
           <p>CREDITS</p>
           <p>VISUAL IDENTITY: RICARDO BÁEZ</p>

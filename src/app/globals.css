@@ -90,6 +90,10 @@ nav ul {
 
 .logo {
   width: 190px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .iso-full {
@@ -98,8 +102,8 @@ nav ul {
 
 .iso-simple {
   display: none;
-  width: 35px;
-  margin-bottom: -4px;
+  width: 26px;
+  height: 26px;
 }
 
 main {
@@ -118,6 +122,7 @@ main {
   }
   header {
     height: 30vh;
+    min-height: 30vh;
     width: 100%;
   }
   .header-wrap {
@@ -133,6 +138,10 @@ main {
   }
   .iso-simple {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1px;
   }
 }
 

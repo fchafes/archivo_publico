@@ -8,4 +8,5 @@ export const imagePaths = [
   "/images/slider/home_7.jpg",
   "/images/slider/home_8.jpg",
   "/images/slider/home_9.jpg",
+  "/images/slider/home_10.jpg",
 ];

@@ -9,6 +9,10 @@
   width: 50%;
 }
 
+.termsSection h4 {
+  font-weight: 400;
+}
+
 .termsSection:nth-child(2) {
   overflow-y: scroll;
   max-width: 500px;
