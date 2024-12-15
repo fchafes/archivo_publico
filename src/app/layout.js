@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
     setIsMenuOpen((prevState) => !prevState);
   };
   const pathname = usePathname();
-  console.log("esto es pathname+++++++++++", pathname)
 
   return (
     <html lang="en">

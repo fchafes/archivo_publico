@@ -56,12 +56,10 @@ nav ul li a.active {
   align-items: stretch;
   height: 100vh;
   overflow: hidden;
-  background-color: red;
 }
 
 header {
   width: 300px;
-  background-color: green;
   padding: 0.8em;
   flex-shrink: 0;
 }
@@ -117,13 +115,20 @@ main {
 /* ----- MOBILE -----  */
 
 @media (max-width: 768px) {
+  .terms-overflow html,
+  .terms-overflow body {
+    overflow-y: scroll;
+  }
+
   .container {
     flex-direction: column;
     align-items: stretch;
+    overflow: scroll;
   }
 
   main {
     max-height: 70vh;
+    overflow: scroll;
   }
 
   header {

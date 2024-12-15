@@ -3,9 +3,25 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import "intersection-observer";
 
 export default function Terms() {
+  const pathname = usePathname(); // Obtiene la ruta actual
+
+  useEffect(() => {
+    // Aplica overflow: hidden solo en la página deseada
+    if (pathname === "/terms" && window.innerWidth <= 768) {
+      document.documentElement.style.overflowY = "scroll";
+      document.body.style.overflowY = "hidden";
+    }
+    // Limpia los estilos cuando salimos de la página
+    return () => {
+      document.documentElement.style.overflowY = "";
+      document.body.style.overflowY = "";
+    };
+  }, [pathname]); // Se vuelve a ejecutar cuando cambia la ruta
+
   const [activeSection, setActiveSection] = useState("");
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -22,7 +38,7 @@ export default function Terms() {
           setActiveSection(closestSection.target.id);
         }
       },
-      { threshold: 1 }
+      { threshold: 0.3 }
     );
 
     sections.forEach((section) => observer.observe(section));
