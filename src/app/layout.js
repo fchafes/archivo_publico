@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
                 <ul>
                   <li>
                     <Link
-                      href="#"
+                      href="https://17aeea-5f.myshopify.com/"
                       className={pathname === "/shop" ? "active" : ""}
                     >
                       SHOP
