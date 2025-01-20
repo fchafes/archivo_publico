@@ -4,9 +4,9 @@
   width: auto;
   display: flex;
   justify-content: flex-start;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .imageSlider::-webkit-scrollbar {
